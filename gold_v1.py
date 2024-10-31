@@ -164,7 +164,7 @@ def main():
     )
     
     # Footer
-    st.markdown("<div style='text-align: center; color: gray; padding: 20px;'>Developed by Anupam Kabade, +91 9008816799</div>", 
+    st.markdown("<div style='text-align: center; color: black; padding: 24px;'>Developed by Anupam Kabade, +91 9008816799</div>", 
                 unsafe_allow_html=True)
 
 if __name__ == "__main__":
