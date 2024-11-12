@@ -81,7 +81,7 @@ def main():
     
     # Title and description
     st.title("Gold ETF Price Prediction Dashboard")
-    st.markdown("This app predicts Gold ETF (GLD) prices using a linear regression model based on moving averages.")
+    st.markdown("This app predicts Gold ETF (GLD) prices using a linear regression model.")
     
     # Set default values instead of using sliders
     lookback_days = 365
@@ -124,9 +124,9 @@ def main():
     # Display metrics in columns
     st.header("Model Performance Metrics")
     col1, col2, col3, col4 = st.columns(4)
-    col1.metric("Mean Squared Error", f"{metrics['MSE']:.4f}")
-    col2.metric("Mean Absolute Error", f"{metrics['MAE']:.4f}")
-    col3.metric("Root Mean Squared Error", f"{metrics['RMSE']:.4f}")
+    col1.metric("Mean Squared Error", f"{metrics['MSE']:.2f}")
+    col2.metric("Mean Absolute Error", f"{metrics['MAE']:.2f}")
+    col3.metric("Root Mean Squared Error", f"{metrics['RMSE']:.2f}")
     col4.metric("R² Score", f"{metrics['R²']:.4f}")
     
     # Generate and display trading signals
