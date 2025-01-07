@@ -23,4 +23,4 @@ def index():
 
     else:
         prediction = 0
-    return render_template("index.html", prediction = prediction)
+    return render_template("front.html", prediction = prediction)
