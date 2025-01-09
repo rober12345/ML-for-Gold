@@ -3,6 +3,17 @@ improved version for gold price, now predicting.
 """
 
 
+
+import streamlit as st
+import yfinance as yf
+from datetime import datetime, timedelta
+import pandas as pd
+import numpy as np
+import plotly.graph_objs as go
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error, mean_absolute_error
+
+
 class GoldPricePredictor:
     def __init__(self, ticker="GLD", lookback_days=365 * 3):  # 3 years of historical data
         self.ticker = ticker
